@@ -1,3 +1,5 @@
-test('Sample test', () => {
-    expect(2 + 2).toBe(4);
+const getMessage = require("./index");
+
+test("Check if correct message is returned", () => {
+    expect(getMessage()).toBe("Hello, GitHub Actions CI/CD!");
 });
